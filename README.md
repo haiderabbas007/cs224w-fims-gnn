@@ -1,7 +1,5 @@
 # CS224W FIMS milestone: source and result companion
 
-Prepared 13 November 2026 UTC (12 November in Hawaii) for Haider Abbas.
-
 This is a source snapshot and evidence companion to the milestone report.
 It is not a finished Colab, a standalone portable training tutorial, or a
 complete data/model release. Opening this ZIP does not launch any cluster jobs.
