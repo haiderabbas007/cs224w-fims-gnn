@@ -1,0 +1,34 @@
+FIMS OPERATING-POINT REVIEW V1 — VALIDATION
+12 November 2026
+
+Completed locally, on synthetic data unless explicitly described otherwise:
+- 14 report metric/provenance tests passed: exact integer loss budgets, whole
+  score ties, ignored-site primary charge, positive-event mean recall, undefined
+  denominators and empty events, strict event-loss >5% boundaries, historical
+  endpoint reproduction, fit coverage and changed-input rejection.
+- 5 histogram/event-survival tests passed: stable display-only sigmoid,
+  histogram totals/ignored-charge accounting and strict-tail survival behavior.
+- 14 scheduler/package/download tests passed, including CPU-only resource
+  requests, absolute Slurm stage paths, changed-package rejection, existing-job
+  reuse, completed-report reuse, unsafe paths and ZIP/output verification.
+- An independent exhaustive numerical oracle passed on 120 random populations
+  at each of the five retention targets.
+- A full 22-fit synthetic integration passed: on-disk saved predictions,
+  protocols, histories and completion hashes were loaded through the unchanged
+  historical verifier; the report produced tables, per-event rows, 22 score-PDF
+  pages, summary plots, provenance and a complete review archive.
+- A mock scheduler CLI exercised initial submission and active-job reuse.
+- The retained synthetic report passed the independent completion verifier and
+  download receiver: PDF, CSVs, plots and ZIP were byte-identical after download;
+  a subsequently modified output was correctly rejected.
+
+Separately, REAL archived curves were reanalysed in FIMS_Recall_90_95_99_Review_v1:
+29 historical report outputs passed pinned SHA256 verification, and all 22 fits
+exactly reproduced their existing 99% cutoff, integer counts and rates. New
+90%/95% pooled metrics were calculated from complete tied-score curve prefixes.
+Those archived curves cannot supply new-cutoff event-level loss or precision.
+
+Not performed here: Koa authentication, a live scheduler submission, loading the
+real per-site arrays stored on Koa, new model inference, training or simulation.
+The delivered launcher submits the real saved-prediction report after the user
+authenticates. Synthetic test outputs are not scientific results.

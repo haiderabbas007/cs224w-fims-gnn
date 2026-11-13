@@ -1,0 +1,70 @@
+FIMS next-campaign settings record — 12 November 2026
+DESIGN ONLY. No detector change, simulation, readout replay or hit-model fit has
+been performed by this reporting package. NEXT_CAMPAIGN_SETTINGS.json records
+the source evidence, proposed choices and pilot checks in machine-readable form.
+
+Peter's reply removes the need to wait for a finalized detector specification.
+For this proof of principle he accepts E=1 kV/cm, B=1 T, drift speed=1 cm/us,
+transverse diffusion=300 um/sqrt(cm), and longitudinal diffusion=200 um/sqrt(cm).
+This approval is not a measured gas model or Tanner's numerical calculation.
+
+The pinned old readout already uses 0.01 mm/ns, which is 1 cm/us, and exactly
+those diffusion coefficients. The earlier conversational value 0.1 cm/us was
+incorrect for this code. Existing arrival times do not need changing merely
+to match the newly approved speed. Diffusion widths grow with sqrt(distance).
+
+Other changes ARE substantive. Captured Geant4 source has B=1.5 T along +z,
+a radius 50 mm, length 100 mm gas cylinder, and a gun distributed over the full
+gas volume. Charge drifts to the nearer z=-50/+50 mm endcap. There is no
+explicit electric force field: drift is imposed by the ideal readout. Its
+generic grid is 5x5 chips per endcap, 20 mm per chip, 256x256 pixels per chip,
+giving 78.125 um pitch. It is not the earlier illustrative 50 um layout.
+
+For the next version, a concrete minimal proposal is to retain that cylinder
+and pixel grid, use a central gun at (0,0,0), change B to 1 T, and collect charge
+at z=+50 mm only. This is equivalent to a centre at z=50 mm in coordinates
+from 0 to 100 mm. Maximum drift becomes 100 mm/10 us instead of 50 mm/5 us.
+Electron drift toward +z corresponds to E toward -z. These coordinate/layout
+choices are proposals under Peter's guidance, not additional specifications
+he supplied. No 500 mm chamber or 50 um pixel change is being assumed.
+
+Before generating a new sample, the code must explicitly distinguish a nominal
+readout field from an electric force applied to Geant4 trajectories. Merely
+adding E=1 kV/cm to metadata would not implement that force. An electromagnetic
+field requires the appropriate equation/integration and tests of energy change
+and field boundaries; the existing magnetic-only configuration is insufficient.
+The approximate Ar/CO2 gas material uses 80/20 mass fractions, not a validated
+volume-mixture transport model. Preserve and state that approximation.
+
+The immediate reporting job uses saved predictions on the OLD development
+sample. It explores 90%, 95%, 99% primary-charge retention and score/event-loss
+distributions without retraining. These targets are not safety requirements.
+
+For the arrival pilot, existing exported unquantized arrival times were obtained
+by exact replay of the original readout, not by jittering 25 ns bins. Keep the
+original site branch and match events/splits/labels. A clocked arrival model gets
+x, y, 25 ns timestamp and arrival order, not true depth or event labels. Separate
+arrivals sharing a clock tick remain separate observations. If two exact
+simulated times tie, score both before either updates state; never present an
+arbitrary file-row order as a measured acquisition sequence. Exact-time inputs
+belong to a separately labeled ideal reference.
+
+Freeze a truth-independent stream schedule; no reset is allowed just because
+the simulation event ID changes. A nonoverlapping first pilot is useful but
+does not demonstrate pileup robustness. Test future-data perturbations, hidden
+boundary changes, tie permutations, and chunked-state replay. History must be
+defined in time, not number of hits. For old two-endcap data, preserve readout
+plane separation. Existing site models see a complete current bin after it
+closes, so their latency differs from immediate-arrival decisions.
+
+Validate unit conversions, drift endpoints, diffusion variance, source/field
+identity, charge/acceptance accounting and label alignment before a small fixed
+pilot. Keep empty events. Preserve all historical results under their original
+version. A later muon/pion dE/dx comparison needs new species samples; the
+electron-only dataset cannot establish particle separation. This design record does not launch mass production.
+
+Evidence: Peter's 9 November reply in the attached issue 75 PDF and his latest
+approval screenshot; pinned original source and ideal-readout hashes appear in
+NEXT_CAMPAIGN_SETTINGS.json. Technical references: Garfield++ User Guide,
+https://garfieldpp.docs.cern.ch/doxygen/UserGuide.pdf ; Geant4 field guide,
+https://geant4.web.cern.ch/documentation/dev/bfad_html/ForApplicationDevelopers/Detector/electroMagneticField.html .

@@ -1,0 +1,138 @@
+{
+  "schema": "fims_next_campaign_design_record_v1",
+  "date": "2026-11-12",
+  "status": "DESIGN_ONLY_NOT_APPLIED",
+  "purpose": "Record the approved proof-of-principle assumptions and the checks required before a new detector/streaming pilot. This reporting package performs no simulation, readout replay, model inference or training.",
+  "existing_results_policy": "Keep every existing dataset, frozen source, model and result under its original version. The new field, source and readout geometry must not be retroactively attributed to existing results.",
+  "guidance_sources": [
+    {
+      "name": "Confirm detector settings and acceptance criteria (#75) · Task · lewis-group_fims.pdf",
+      "sha256": "58716fc000095846cd48c69f1c30936263942cf5e004fc5b8f300af46c716770",
+      "evidence": "Peter Lewis, 9 November 2026: proof of principle rather than deployable design; single TPC volume recommended; existing unspecified assumptions acceptable; uniform E field; B=1 T; central particle gun; x/y/timestamp in arrival sequence; possible 40 MHz master clock; no supplied event boundaries."
+    },
+    {
+      "name": "image(20261112-212412).png",
+      "sha256": "1c4cf190ddb001c31b240b2830860679ba543bc34788b267af94b59427d99399",
+      "evidence": "Peter accepts the proposed E=1 kV/cm, drift speed=1 cm/us and transverse/longitudinal diffusion widths 300/200 um/sqrt(cm), at B=1 T, as proof-of-principle choices. This is not a measurement, gas-transport calculation or confirmation of Tanner's numerical derivation."
+    },
+    {
+      "name": "Pasted markdown.md",
+      "sha256": "19d497becd8414cc4916f17618ac869628b1a9e0b1e95a34da6c8a21b7c13ba5",
+      "evidence": "Prior meeting interpretation: examine 90%,95%,99% retention, classifier-score distributions and individual-event charge loss. The 95% operating point is a comparison target, not a demonstrated detector safety limit."
+    }
+  ],
+  "verified_existing_configuration": {
+    "source_evidence": {
+      "source_snapshot_zip": "tmp/efield_evidence/source_snapshot.zip",
+      "src/DetectorConstruction.cc": "5072edf15dc45ab5433218490993b0bdcbabc4e9b6ed99ee0946f631e304387e",
+      "src/PrimaryGeneratorAction.cc": "6b56d888fdb3961210d362941ef61f1c441576d6aba4434d7c58aeebd4258982",
+      "src/SteppingAction.cc": "35f3ef5a5dd3863b41c8e57467138d3d2fae4087e2fe2f340df46255c8c05436",
+      "readout_adapter_v2.py": "c730d745ebe8870661693d0c74e99dc1ac8c7860b02517f9033d1ab8d621bce3",
+      "qualification": "The snapshot source hashes agree with transport_reference_v2 original-source entries. The later tight100 transport adapter retains the gas field and magnetic-field value while changing vacuum integration."
+    },
+    "active_gas": {
+      "shape": "cylinder",
+      "radius_mm": 50.0,
+      "z_min_mm": -50.0,
+      "z_max_mm": 50.0,
+      "full_length_mm": 100.0,
+      "geant4_slices": 10,
+      "description": "One gas envelope with two-end drift convention; gas slices are geometry subdivisions, not additional detectors."
+    },
+    "source": {
+      "particle": "e-",
+      "momentum_uniform_MeV_c": [50.0, 500.0],
+      "position": "uniform over the full cylindrical gas volume",
+      "direction": "isotropic"
+    },
+    "magnetic_field_tesla": [0.0, 0.0, 1.5],
+    "electric_field": "No explicit electric force field in the captured Geant4 field setup. Drift and diffusion are separately prescribed by the ideal readout; no numeric E is inferred from the prescribed speed.",
+    "gas": {
+      "geant4_mass_fractions": {"Ar": 0.80, "CO2": 0.20},
+      "temperature_K": 293.15,
+      "pressure_atm": 1.0,
+      "density_g_cm3": 0.0016,
+      "qualification": "Approximate simulation material; these are implementation mass fractions, not a documented 80/20 volume mixture. No validated transport calculation ties this mixture to the prescribed drift/diffusion."
+    },
+    "ideal_readout": {
+      "drift_speed_mm_ns": 0.01,
+      "drift_speed_cm_us": 1.0,
+      "transverse_diffusion_um_per_sqrt_cm": 300.0,
+      "longitudinal_diffusion_um_per_sqrt_cm": 200.0,
+      "diffusion_formula": "sigma_T,L(mm) = {0.30,0.20} * sqrt(drift_distance_mm/10)",
+      "drift_distance_formula_mm": "50 - abs(z_mm)",
+      "readout_planes_z_mm": [-50.0, 50.0],
+      "z_zero_assignment": "positive-z readout",
+      "max_drift_distance_mm": 50.0,
+      "max_unsmeared_drift_delay_ns": 5000.0,
+      "clock_ns": 25.0,
+      "chip_width_mm": 20.0,
+      "chip_pixels_per_axis": 256,
+      "chips_per_axis_per_endcap": 5,
+      "pixel_pitch_um": 78.125,
+      "global_pixels_per_axis": 1280,
+      "readout_acceptance": "radius-50 mm disk inside enclosing square; no chip gaps modeled",
+      "electron_count": "Poisson(edep/26 eV); stored ROOT gain10 is divided out before sampling",
+      "omissions": "No electronics noise, background overlay, attachment, gain fluctuations, pulse merging, threshold or deadtime model. No full drift-path wall loss.",
+      "correction": "The earlier conversational drift speed 0.1 cm/us was incorrect for this pinned readout; 0.01 mm/ns equals 1 cm/us."
+    }
+  },
+  "approved_proof_of_principle_choices": {
+    "electric_field_magnitude_kV_cm": 1.0,
+    "magnetic_field_magnitude_T": 1.0,
+    "drift_speed_cm_us": 1.0,
+    "transverse_diffusion_um_per_sqrt_cm": 300.0,
+    "longitudinal_diffusion_um_per_sqrt_cm": 200.0,
+    "geometry_direction": "single drift volume",
+    "source_position": "geometric centre",
+    "source_species": "electrons first; charged pions and muons as later extensions",
+    "stream_observables": ["x", "y", "clock timestamp", "acquisition sequence"],
+    "event_boundary_input": false,
+    "clock_working_choice_MHz": 40.0,
+    "clock_working_choice_ns": 25.0,
+    "scope": "Generic ideal proof of principle. Acceptance does not establish a final detector design or a self-consistent gas transport calculation."
+  },
+  "proposed_next_pilot_implementation_choices": {
+    "status": "PROPOSED_NOT_IMPLEMENTED_OR_RUN",
+    "geometry": "Retain the current radius50 mm, length100 mm cylinder and generic pixel grid; make all charge drift to the positive-z readout at z=+50 mm. Do not silently enlarge to a 500 mm chamber or change to50 um pixels.",
+    "source_mm": [0.0, 0.0, 0.0],
+    "coordinate_equivalence": "The centre z=0 for coordinates [-50,50] mm is z=zmax/2=50 mm for coordinates [0,100] mm.",
+    "drift_distance_formula_mm": "50 - z_mm",
+    "max_drift_distance_mm": 100.0,
+    "max_unsmeared_drift_delay_ns": 10000.0,
+    "field_orientation": "Propose B along +z; to drift electrons toward +z, E points along -z. Direction is an implementation convention, not an additional quote from Peter.",
+    "electric_force_implementation_gate": "Declare whether E is only a nominal field associated with prescribed readout transport or is explicitly applied to Geant4 particle trajectories. Full electric force requires a validated electromagnetic equation/integrator in gas; the current magnetic-only setup cannot be relabeled as having it. Do not introduce an electric field throughout the external vacuum inadvertently.",
+    "staged_comparison": "First run unit/synthetic tests and a small fixed-seed smoke sample; then a preassigned pilot (for example 500 electron events) to inspect yields, empty events, timing, acceptance and runtime. Do not tune labels or filter events to obtain a preferred yield. No mass production in this package.",
+    "future_physics_impact": "A muon/pion dE/dx study around500 MeV/c needs new species samples and a declared estimator; existing electron-only events cannot establish that separation. Compare random loss and ML removal at matched loss budgets."
+  },
+  "continuous_arrival_branch": {
+    "existing_export": "Pinned ROOT/readout replay retains pre-binning float64 arrival times, verifies every native electron field and reconstructed site map, and requires floor(arrival_time_ns/25)==original time_bin_abs. No Geant4 rerun or invented sub-bin jitter.",
+    "existing_export_limit": "Within-event ideal-electron records; native storage order is bin/address order rather than chronology. All electrons from a source step use the step's post-step Gtime. Event boundaries still exist in metadata; a no-boundary streaming model has not been established by this export.",
+    "clocked_model_inputs": "Use pixel x/y, quantized25 ns timestamp and observed arrival sequence; exclude true creation z, source/track identity, labels, event time origin and exact sub-bin time differences.",
+    "same_clock_tick": "Distinct underlying arrival times remain separate ordered records. A later record may see earlier records within the same tick; no record may see later arrivals.",
+    "exact_time_ties": "When simulated arrival times are exactly equal and physical acquisition order is unavailable, predict the tied group from one common pre-update context and update state jointly/permutation-invariantly. A lexicographic file-row tie break is not evidence of physical arrival order.",
+    "exact_time_reference": "Keep any model that uses unquantized times explicitly separate from the clocked model.",
+    "event_boundaries": "Keep event IDs only for split assignment, truth attribution and per-event evaluation. State must not reset when a hidden simulation event ID changes. Any idle-time reset or decay must depend on the observable stream only.",
+    "stream_schedule": "Freeze and record a truth-independent event onset schedule separately within each data split. A nonoverlapping schedule is an acceptable first pilot if labeled artificial; it does not establish behavior under pileup. Event rate/overlap has not been specified by Peter.",
+    "matching": "Use the same source events, split, labels, observation history and loss accounting for matched site/arrival comparisons. Report differing prediction latency: existing site models see a full current bin after it closes; causal arrivals see only preceding records.",
+    "old_two_endcap_pilot": "Treat endcaps as separate readout streams or retain their observable readout-plane identity; never combine equal pixel addresses across endcaps as if they were one sensor.",
+    "label_policy": "Initially preserve the existing microcurler/descendant/mixed-site supervision masks. Any change is a separate documented comparison.",
+    "metric_policy": "An ideal electron is one equal-charge record, so primary-electron count and primary charge agree there; site counts and charge need not agree. Report denominators explicitly."
+  },
+  "pilot_acceptance_checks": [
+    "Unit conversions:1 cm/us=0.01 mm/ns;1 kV/cm=100 V/mm;40 MHz=25 ns;25 ns drift corresponds to0.25 mm before diffusion, not a guaranteed spatial resolution.",
+    "One-end readout: z=-50,0,+50 mm gives unsmeared distances100,50,0 mm and delays10000,5000,0 ns; no absolute-z nearest-end formula remains.",
+    "Diffusion: sample variances in x,y and longitudinal displacement agree with D^2*d at several distances; zero-distance and boundary clipping are tested; time width follows longitudinal width divided by drift speed away from truncation.",
+    "Field/source: record actual field vector and particle vertex; geometry-overlap checks pass; changing B or E is a new source version. If explicit electric force is implemented, test charge-sign direction and work-energy change, plus integration-tolerance stability for low momentum tracks.",
+    "Readout accounting: generated=accepted+rejected; truth category counts and electron-to-site maps align; keep empty and microcurler-free events; hash all frozen inputs and outputs.",
+    "Causality: changing future arrivals cannot change earlier predictions; inserting or relabeling hidden event boundaries cannot change outputs; exact-time tied-group permutations cannot change predictions or final state.",
+    "Stream batching: one-pass and chunked inference agree while carrying state; physical history is measured in time rather than a fixed number of hits; train/validation events never share a stream or model state.",
+    "Matched metric check: project site decisions through the exact electron-to-site map and reproduce site primary-charge loss; report both pooled and equal-event recall and per-event charge-loss distributions.",
+    "No scale-up until the fixed pilot passes; new dataset/version identifiers, disjoint generation seeds and prespecified train/calibration/evaluation roles precede any new production."
+  ],
+  "technical_references": [
+    "https://garfieldpp.docs.cern.ch/doxygen/UserGuide.pdf",
+    "https://geant4.web.cern.ch/documentation/dev/bfad_html/ForApplicationDevelopers/Detector/electroMagneticField.html",
+    "https://geant4.web.cern.ch/documentation/pipelines/master/prm_html/PhysicsReferenceManual/generalities/particletransport/transportation.html"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "source": "FIMS_CNN_Capacity_v2/code/capacity_metrics_v2.py",
+  "sha256": "5de4fa9511ee6298573681cc28b19edfed17ec29ef39e4800281c281fcf9ce0b",
+  "reason": "Unmodified whole-score-tie and integer-charge-budget metric implementation"
+}

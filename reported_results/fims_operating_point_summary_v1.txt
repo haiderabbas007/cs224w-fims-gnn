@@ -1,0 +1,74 @@
+FIMS OPERATING-POINT REVIEW V1: COMPLETE
+
+22 existing selected fits; 2,500 fixed development-validation events.
+No training, model inference or new simulation. No confirmation data read.
+Cutoffs selected and reported on these same development events.
+
+Retention target | Model | Microcurler-site recall | Equal-event recall | Actual primary-charge retention | Events losing >5% primary charge | Supervised precision
+99.9% | CNN small [three-seed mean] | 46.728% | 41.136% | 99.900% | 0.229% | 95.244%
+99.5% | CNN small [three-seed mean] | 62.370% | 61.662% | 99.500% | 1.105% | 81.742%
+99% | CNN small [three-seed mean] | 71.265% | 72.122% | 99.000% | 2.035% | 71.373%
+95% | CNN small [three-seed mean] | 89.171% | 90.850% | 95.000% | 13.007% | 43.936%
+90% | CNN small [three-seed mean] | 93.504% | 94.689% | 90.000% | 30.665% | 33.729%
+99.9% | CNN wide [three-seed mean] | 47.858% | 40.857% | 99.900% | 0.256% | 96.231%
+99.5% | CNN wide [three-seed mean] | 67.812% | 67.050% | 99.500% | 0.984% | 83.838%
+99% | CNN wide [three-seed mean] | 76.027% | 77.314% | 99.000% | 2.130% | 72.226%
+95% | CNN wide [three-seed mean] | 91.086% | 92.617% | 95.000% | 13.061% | 44.306%
+90% | CNN wide [three-seed mean] | 94.451% | 95.449% | 90.000% | 31.433% | 34.065%
+99.9% | GNN 2-layer [three-seed mean] | 40.834% | 37.209% | 99.900% | 0.283% | 95.762%
+99.5% | GNN 2-layer [three-seed mean] | 64.925% | 66.004% | 99.500% | 1.725% | 78.602%
+99% | GNN 2-layer [three-seed mean] | 72.704% | 74.234% | 99.000% | 2.844% | 70.658%
+95% | GNN 2-layer [three-seed mean] | 90.280% | 91.782% | 95.000% | 14.786% | 43.677%
+90% | GNN 2-layer [three-seed mean] | 94.237% | 95.316% | 90.000% | 31.082% | 33.155%
+99.9% | GNN 1-layer [three-seed mean] | 44.375% | 38.269% | 99.900% | 0.283% | 96.433%
+99.5% | GNN 1-layer [three-seed mean] | 64.220% | 64.614% | 99.500% | 1.146% | 83.101%
+99% | GNN 1-layer [three-seed mean] | 72.544% | 74.313% | 99.000% | 2.089% | 72.920%
+95% | GNN 1-layer [three-seed mean] | 89.186% | 90.958% | 95.000% | 12.926% | 44.376%
+90% | GNN 1-layer [three-seed mean] | 93.627% | 94.790% | 90.000% | 29.101% | 33.554%
+99.9% | GNN without explicit x/y offsets [three-seed mean] | 40.592% | 37.697% | 99.900% | 0.256% | 95.531%
+99.5% | GNN without explicit x/y offsets [three-seed mean] | 65.207% | 67.111% | 99.504% | 1.793% | 76.523%
+99% | GNN without explicit x/y offsets [three-seed mean] | 73.502% | 75.721% | 99.000% | 2.871% | 68.774%
+95% | GNN without explicit x/y offsets [three-seed mean] | 90.229% | 91.950% | 95.000% | 14.894% | 42.984%
+90% | GNN without explicit x/y offsets [three-seed mean] | 94.024% | 95.327% | 90.000% | 30.098% | 33.127%
+99.9% | GNN current bin [three-seed mean] | 20.991% | 22.471% | 99.900% | 0.202% | 88.290%
+99.5% | GNN current bin [three-seed mean] | 49.203% | 55.202% | 99.500% | 1.361% | 65.236%
+99% | GNN current bin [three-seed mean] | 59.365% | 66.001% | 99.000% | 2.884% | 56.059%
+95% | GNN current bin [three-seed mean] | 80.029% | 85.620% | 95.000% | 15.892% | 38.749%
+90% | GNN current bin [three-seed mean] | 86.491% | 90.620% | 90.000% | 31.473% | 31.285%
+99.9% | Counts / 8 bins [one deterministic fit] | 37.897% | 36.138% | 99.900% | 0.283% | 93.403%
+99.5% | Counts / 8 bins [one deterministic fit] | 61.695% | 63.857% | 99.500% | 1.739% | 74.290%
+99% | Counts / 8 bins [one deterministic fit] | 69.173% | 71.819% | 99.000% | 2.669% | 66.187%
+95% | Counts / 8 bins [one deterministic fit] | 87.818% | 89.304% | 95.000% | 15.366% | 42.901%
+90% | Counts / 8 bins [one deterministic fit] | 92.497% | 93.181% | 90.000% | 32.552% | 33.510%
+99.9% | Counts + shape / 8 bins [one deterministic fit] | 39.509% | 40.419% | 99.900% | 0.243% | 90.947%
+99.5% | Counts + shape / 8 bins [one deterministic fit] | 65.902% | 69.278% | 99.500% | 1.739% | 71.148%
+99% | Counts + shape / 8 bins [one deterministic fit] | 76.034% | 78.794% | 99.000% | 4.529% | 62.417%
+95% | Counts + shape / 8 bins [one deterministic fit] | 91.017% | 91.658% | 95.000% | 18.480% | 42.726%
+90% | Counts + shape / 8 bins [one deterministic fit] | 94.478% | 94.861% | 90.000% | 34.412% | 33.723%
+99.9% | Counts / current bin [one deterministic fit] | 18.537% | 21.155% | 99.900% | 0.162% | 84.256%
+99.5% | Counts / current bin [one deterministic fit] | 46.762% | 53.112% | 99.500% | 1.254% | 63.308%
+99% | Counts / current bin [one deterministic fit] | 57.525% | 64.919% | 99.000% | 2.305% | 55.251%
+95% | Counts / current bin [one deterministic fit] | 77.325% | 83.521% | 95.001% | 14.193% | 38.825%
+90% | Counts / current bin [one deterministic fit] | 83.903% | 88.717% | 90.029% | 26.769% | 31.144%
+99.9% | Counts + shape / current bin [one deterministic fit] | 33.737% | 39.639% | 99.900% | 0.243% | 76.433%
+99.5% | Counts + shape / current bin [one deterministic fit] | 55.457% | 62.384% | 99.500% | 1.294% | 59.712%
+99% | Counts + shape / current bin [one deterministic fit] | 66.085% | 73.216% | 99.000% | 3.316% | 52.879%
+95% | Counts + shape / current bin [one deterministic fit] | 83.506% | 87.852% | 95.000% | 18.156% | 38.412%
+90% | Counts + shape / current bin [one deterministic fit] | 87.910% | 91.182% | 90.000% | 37.404% | 31.351%
+
+Interpretation and limitations:
+- 90%, 95% and 99% are exploratory comparison targets, not demonstrated detector safety limits.
+- 99.9% and 99.5% retain historical references; all five points use each fit's unchanged selected checkpoint.
+- Primary-charge retention counts every accepted attributed primary electron, including ignored/mixed sites.
+- Supervised microcurler-site recall and precision omit ignored labels; microcurler-charge recall includes all attributed accepted microcurler electrons.
+- Equal-event recall averages only events with supervised microcurler sites. Events without microcurlers are not assigned artificial recall values.
+- Event-loss fractions use only primary-bearing events; empty and zero-primary events remain in the data inventory.
+- Whole equal-logit groups stay together. Integer loss budgets are floored. Actual retention can exceed the nominal target.
+- Histograms display classifier scores, not calibrated probabilities. Cutoffs are shown separately for every model/seed.
+- Seed ranges describe these training repetitions on shared events, not independent-event confidence intervals.
+- Graphs, feature controls and CNN patches differ; these are implemented pipeline comparisons.
+- Original GNN runtime recovery used chunked messages and activation recomputation; numerical roundoff may differ from the original CUDA path. Existing saved predictions are reused exactly.
+- All results describe the historical detector/readout configuration. Newly discussed transport values have NOT been applied to this dataset.
+- Charge preservation and the >5% event-loss diagnostic do not establish tracking or particle-identification performance.
+- Curves saved under curves/ are sampled for display only. Tables, cutoffs, histogram counts and event rows are computed from the complete saved predictions.
+- No single winning threshold is adopted here. Freeze a chosen procedure before a genuinely new calibration/evaluation sample.

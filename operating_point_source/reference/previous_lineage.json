@@ -1,0 +1,1143 @@
+{
+  "fit_receipts": {
+    "results/fits/current2/seed20260924/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "16acb032c8e5295b58efce312f88d14b4d56d38137794f364678986f4710e6f0",
+          "resume_checkpoint.pt": "1f32423e66cdc15092011c4343b488476aaf87e715fe134d89accaadda412892"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "current2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/current2/seed20260924",
+        "original_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "16acb032c8e5295b58efce312f88d14b4d56d38137794f364678986f4710e6f0",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "9138bbdb4f9506a39a5d2791ea0a641087ba2793b89453e395c61a2bf67ae584",
+        "progress": {
+          "epoch": 4,
+          "next_batch": 495
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260924
+      },
+      "sha256": "763b21a6d75b5423370e39e274db6350c506fa8acf65f9c3eb05d204d0492a15"
+    },
+    "results/fits/current2/seed20260924/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "2117b930af5b0cb13c43265fb3e232c5882129c3e13f46013a104aaba417de7c",
+        "parent_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "16acb032c8e5295b58efce312f88d14b4d56d38137794f364678986f4710e6f0",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 4,
+          "next_batch": 495
+        },
+        "recovery_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "1ac8911a744fb4bf4a1601672a02781554bfd30c66a3b3c491fc7c45132d2674",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "1f32423e66cdc15092011c4343b488476aaf87e715fe134d89accaadda412892",
+        "source_receipt_sha256": "763b21a6d75b5423370e39e274db6350c506fa8acf65f9c3eb05d204d0492a15",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "9138bbdb4f9506a39a5d2791ea0a641087ba2793b89453e395c61a2bf67ae584"
+      },
+      "sha256": "c867b27704b3ad71e4c577a6ae86062c2b9c07f860cc18f25696dfd57574cadc"
+    },
+    "results/fits/current2/seed20260924/runtime_sessions/session_o044lavw.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1766334,
+        "protocol_sha256": "1ac8911a744fb4bf4a1601672a02781554bfd30c66a3b3c491fc7c45132d2674",
+        "slurm_array_task_id": "9",
+        "slurm_job_id": "15148339",
+        "utc": "2026-10-26T04:51:37.805621+00:00"
+      },
+      "sha256": "4f3fe296aab3d0d09b9beccd798dc8036335540718e6675639fd48868732d27e"
+    },
+    "results/fits/current2/seed20260925/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "82e6280884d4ac0114d0f950985ef6f185a32b53b03ef9815f3e3dc3211b63a0"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "current2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/current2/seed20260925",
+        "original_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "8a7b82cf793b10bff752d1c24506d8f605e36375713124c7db5bb69b8de178c0",
+        "progress": {
+          "epoch": 4,
+          "next_batch": 443
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260925
+      },
+      "sha256": "92fffef71679534aa6204bbbe4a1b2adf5782c92c4313d9e295f76a9c66db270"
+    },
+    "results/fits/current2/seed20260925/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "10e8bbd8fbbbb86f1c1d27693d0ed984454e026a6a8fb95b4f6a458d13035984",
+        "parent_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 4,
+          "next_batch": 443
+        },
+        "recovery_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "6b8f25c1337bbed8e0bb69f18b140b94ac8685ba0cb650bcb77d2d98a67350c3",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "82e6280884d4ac0114d0f950985ef6f185a32b53b03ef9815f3e3dc3211b63a0",
+        "source_receipt_sha256": "92fffef71679534aa6204bbbe4a1b2adf5782c92c4313d9e295f76a9c66db270",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "8a7b82cf793b10bff752d1c24506d8f605e36375713124c7db5bb69b8de178c0"
+      },
+      "sha256": "d3a0d7daadb2325a7188478188dbebe9f5a028bd828dd588cd8ed20a614b8653"
+    },
+    "results/fits/current2/seed20260925/runtime_sessions/session_skdu2w7r.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 2093357,
+        "protocol_sha256": "6b8f25c1337bbed8e0bb69f18b140b94ac8685ba0cb650bcb77d2d98a67350c3",
+        "slurm_array_task_id": "10",
+        "slurm_job_id": "15148340",
+        "utc": "2026-10-26T08:18:59.699282+00:00"
+      },
+      "sha256": "cd18c66efb9bf75386c0b2f37a9f6e8cd81181c474f2aabc461358d6831a86d6"
+    },
+    "results/fits/current2/seed20260926/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "504b38dd8acf700ebdd89786427966fbcbc8c07b676ecaaf7ca08c2e4f92970e",
+          "resume_checkpoint.pt": "d7171785584d6f9a2731b70a9f8703c8f3e35b8772f3666f341f2360c6c609ff"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "current2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/current2/seed20260926",
+        "original_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "504b38dd8acf700ebdd89786427966fbcbc8c07b676ecaaf7ca08c2e4f92970e",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "35d3a7f3072fa81acae3bd138a936b73b4bdde30ed8c96dee0120645babc4c96",
+        "progress": {
+          "epoch": 6,
+          "next_batch": 930
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260926
+      },
+      "sha256": "8061e9654e89f53bcf453437c09e8447e765d4d0ea7d3176daef3c77e606b3de"
+    },
+    "results/fits/current2/seed20260926/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "e0b1fcbe8cbd516468b4f8d99432b7ef0cd171eee2accf1d01828123596c3d9d",
+        "parent_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "504b38dd8acf700ebdd89786427966fbcbc8c07b676ecaaf7ca08c2e4f92970e",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 6,
+          "next_batch": 930
+        },
+        "recovery_identity": {
+          "model": "current2",
+          "parameters": 33857,
+          "protocol_sha256": "de06b8b46472749d5dfab2582b34c86a0cb46899ac540107fe55c8c29857bb98",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "d7171785584d6f9a2731b70a9f8703c8f3e35b8772f3666f341f2360c6c609ff",
+        "source_receipt_sha256": "8061e9654e89f53bcf453437c09e8447e765d4d0ea7d3176daef3c77e606b3de",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "35d3a7f3072fa81acae3bd138a936b73b4bdde30ed8c96dee0120645babc4c96"
+      },
+      "sha256": "af2d3130c89e94bfadad140826f4b19367c405de4bc34cdde7b5a4d06d48c164"
+    },
+    "results/fits/current2/seed20260926/runtime_sessions/session_dbb837xe.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1710023,
+        "protocol_sha256": "de06b8b46472749d5dfab2582b34c86a0cb46899ac540107fe55c8c29857bb98",
+        "slurm_array_task_id": "11",
+        "slurm_job_id": "15145178",
+        "utc": "2026-10-26T08:49:37.735198+00:00"
+      },
+      "sha256": "cb06d66c226c7e70961c8c8da2d9813fecfd9fa5dc3fb8c42cb40920b5ffa6c9"
+    },
+    "results/fits/full1/seed20260924/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "45e8641c1dc75b5969bc78605aa092bb6747dbef7279461074f258555ffe51d1"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "full1",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/full1/seed20260924",
+        "original_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "14ca542d5b0f38d87456c6535b8b238b92ee566224b71ae27ffc2b4c0bc22855",
+        "progress": {
+          "epoch": 0,
+          "next_batch": 369
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260924
+      },
+      "sha256": "1b2bda8b626587da35211b0d451590c9595e57468cdc83b2352dca1345d1c8f7"
+    },
+    "results/fits/full1/seed20260924/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "9af7ec9f3c4c01ba9b88d1989b6fe8e69d22ba8860cece9299ec995199b77800",
+        "parent_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 0,
+          "next_batch": 369
+        },
+        "recovery_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "a93313338179b5bfb1bf3a89f4c17e4ea3f35517b5b32eb13301b08a2537e69a",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "45e8641c1dc75b5969bc78605aa092bb6747dbef7279461074f258555ffe51d1",
+        "source_receipt_sha256": "1b2bda8b626587da35211b0d451590c9595e57468cdc83b2352dca1345d1c8f7",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "14ca542d5b0f38d87456c6535b8b238b92ee566224b71ae27ffc2b4c0bc22855"
+      },
+      "sha256": "387d4cb6baf0d92ad63a7fb1f3fc638401a898e0f961424901e7d6af9113c99b"
+    },
+    "results/fits/full1/seed20260924/runtime_sessions/session_7_8agtaz.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1837708,
+        "protocol_sha256": "a93313338179b5bfb1bf3a89f4c17e4ea3f35517b5b32eb13301b08a2537e69a",
+        "slurm_array_task_id": "3",
+        "slurm_job_id": "15148333",
+        "utc": "2026-10-24T12:56:41.582721+00:00"
+      },
+      "sha256": "9e1bbbcf9f5cd05f72acff367142945a2a4afbf3afe45698792d1c1ae5a2dc87"
+    },
+    "results/fits/full1/seed20260925/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "0c2cf504380a7ba76a3fed74f7d0c5a4a3f97074a5f01a54d1b3d8d6aa210418"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "full1",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/full1/seed20260925",
+        "original_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "63529d0b608f75732fe938ab7dafe2498d96f775c62902ef2cdf0f6c60860f89",
+        "progress": {
+          "epoch": 0,
+          "next_batch": 340
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260925
+      },
+      "sha256": "e1f95e2775a4ce1e750122333da14ff71d75574544908fa138e1e0f4620cf5ff"
+    },
+    "results/fits/full1/seed20260925/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "f32c069118706318b1a8c642f835e2bc6cfae6a08df23265aa5d5bce200c85f0",
+        "parent_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 0,
+          "next_batch": 340
+        },
+        "recovery_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "ea9f0f1730703175b8c4e49a3efb1c4b86ac2a16cfd04780264801307143c0cb",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "0c2cf504380a7ba76a3fed74f7d0c5a4a3f97074a5f01a54d1b3d8d6aa210418",
+        "source_receipt_sha256": "e1f95e2775a4ce1e750122333da14ff71d75574544908fa138e1e0f4620cf5ff",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "63529d0b608f75732fe938ab7dafe2498d96f775c62902ef2cdf0f6c60860f89"
+      },
+      "sha256": "a42105d0c3755576af6021e211ccea20372cd0e1b1caf41a4e7dad32ee9331c4"
+    },
+    "results/fits/full1/seed20260925/runtime_sessions/session_baugyrwy.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1597747,
+        "protocol_sha256": "ea9f0f1730703175b8c4e49a3efb1c4b86ac2a16cfd04780264801307143c0cb",
+        "slurm_array_task_id": "4",
+        "slurm_job_id": "15148334",
+        "utc": "2026-10-24T15:51:06.394246+00:00"
+      },
+      "sha256": "2008dc15d7537010dd598dcbee33f7c813eee2b7c1a74a93552ffd5b99f4c412"
+    },
+    "results/fits/full1/seed20260926/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "a01e0432bab79919c7607fbfae6915f63e8481d37d87e8c66b573daa2cb118a6"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "full1",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/full1/seed20260926",
+        "original_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "10174c819377cbe94d35a67681bc5dc8cbfd2e921e8b9d2fcd006506388c30b7",
+        "progress": {
+          "epoch": 0,
+          "next_batch": 213
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260926
+      },
+      "sha256": "85e8b1d65b647b3c071c3eef54d30c18c241eefaef5252b08f7837653aacd2e7"
+    },
+    "results/fits/full1/seed20260926/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "97a4c7c7c69d8a9568175f0e6d036d2a653145fb6242278eff6e8dad939de3e6",
+        "parent_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 0,
+          "next_batch": 213
+        },
+        "recovery_identity": {
+          "model": "full1",
+          "parameters": 12929,
+          "protocol_sha256": "1bb10f7133ade9c9d429688fe8b93834de70078d6f76250625f46a887cc8a82f",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "a01e0432bab79919c7607fbfae6915f63e8481d37d87e8c66b573daa2cb118a6",
+        "source_receipt_sha256": "85e8b1d65b647b3c071c3eef54d30c18c241eefaef5252b08f7837653aacd2e7",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "10174c819377cbe94d35a67681bc5dc8cbfd2e921e8b9d2fcd006506388c30b7"
+      },
+      "sha256": "6d80dc85a71b1b4737b98bd00e174497649d8a3d0edd3f804f3b682d606bee21"
+    },
+    "results/fits/full1/seed20260926/runtime_sessions/session_9jesogsj.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1655980,
+        "protocol_sha256": "1bb10f7133ade9c9d429688fe8b93834de70078d6f76250625f46a887cc8a82f",
+        "slurm_array_task_id": "5",
+        "slurm_job_id": "15148335",
+        "utc": "2026-10-24T16:55:53.635103+00:00"
+      },
+      "sha256": "b5a60eb0365faf25386ce2b3efba4af0a8808fe5720306090f96545f65a8ceab"
+    },
+    "results/fits/full2/seed20260924/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "d7fb9cad06bb629395a6a2232efba9d29458d7b153aecdd7d33e074fb20f69fe"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "full2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/full2/seed20260924",
+        "original_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "0d8c78cb62c13f55a1b084bba545c05bad3ee9e683e44a02cc3bb06b8d94b325",
+        "progress": {
+          "epoch": 0,
+          "next_batch": 369
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260924
+      },
+      "sha256": "7a08f2a55bb445078f51e068ac62bb740c64fa94fbaaee2f98a463a523a0e0b3"
+    },
+    "results/fits/full2/seed20260924/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "1d2a7c24dcd76f37eda2e6e904b28b145cf4c666ae2bf88efaaa1f26feb2e11d",
+        "parent_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 0,
+          "next_batch": 369
+        },
+        "recovery_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "c10faa61c6365b8b0851c2d221bb55a1ea143134ac5edf14c299e32b833bbbc6",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "d7fb9cad06bb629395a6a2232efba9d29458d7b153aecdd7d33e074fb20f69fe",
+        "source_receipt_sha256": "7a08f2a55bb445078f51e068ac62bb740c64fa94fbaaee2f98a463a523a0e0b3",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "0d8c78cb62c13f55a1b084bba545c05bad3ee9e683e44a02cc3bb06b8d94b325"
+      },
+      "sha256": "7bdf7e01e336a21c0d239c3e4a62c36c9a0afda80805ebd9b7c50505af89f316"
+    },
+    "results/fits/full2/seed20260924/runtime_sessions/session_f1c9h86a.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1576106,
+        "protocol_sha256": "c10faa61c6365b8b0851c2d221bb55a1ea143134ac5edf14c299e32b833bbbc6",
+        "slurm_array_task_id": "0",
+        "slurm_job_id": "15148330",
+        "utc": "2026-10-24T12:26:38.301396+00:00"
+      },
+      "sha256": "2a601444ab223da0b0ac70a645cf63ddc5e1e9dfff5180bce327615d7d2b16b0"
+    },
+    "results/fits/full2/seed20260925/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "7f445025ad580a3e872c0b97f52de79cc732fc4f6260ab400507f05a0d6e54f5"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "full2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/full2/seed20260925",
+        "original_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "526249408246547248ed840695a6d16667554da31f1b438c6fe7511d378b7fdf",
+        "progress": {
+          "epoch": 0,
+          "next_batch": 340
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260925
+      },
+      "sha256": "13d69fd155967f4a4f0ec155ea1cfc4c71fcdbe57e83d7e1345a848e48738dcb"
+    },
+    "results/fits/full2/seed20260925/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "c60141a75d860f6a1552c7d5588c53faff0b9b0483e321717bcbbb93b495f545",
+        "parent_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 0,
+          "next_batch": 340
+        },
+        "recovery_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "ec5572c0199d7cf87b2e65e590990d8c0072056b8629aac4be1f0d28bb15537f",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "7f445025ad580a3e872c0b97f52de79cc732fc4f6260ab400507f05a0d6e54f5",
+        "source_receipt_sha256": "13d69fd155967f4a4f0ec155ea1cfc4c71fcdbe57e83d7e1345a848e48738dcb",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "526249408246547248ed840695a6d16667554da31f1b438c6fe7511d378b7fdf"
+      },
+      "sha256": "0f6544ac8f110b7e7a8d70ca620c754883c77dafb0a280af8fedb8783cd765bc"
+    },
+    "results/fits/full2/seed20260925/runtime_sessions/session_0c5g3yq8.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1537430,
+        "protocol_sha256": "ec5572c0199d7cf87b2e65e590990d8c0072056b8629aac4be1f0d28bb15537f",
+        "slurm_array_task_id": "1",
+        "slurm_job_id": "15148331",
+        "utc": "2026-10-24T12:41:58.198714+00:00"
+      },
+      "sha256": "80ed83d6efbe8dd92096a66f04a80112d41684b8dd381816274c21349da3df43"
+    },
+    "results/fits/full2/seed20260926/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "d2d186336624b75d93cb4afd48ecebd8919a6d1d2346d59e4755561ec0c60a35"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "full2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/full2/seed20260926",
+        "original_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "08ce957bc83757c362209f7e8938a73f4cb9633b0e993360e2d50a1223629df1",
+        "progress": {
+          "epoch": 0,
+          "next_batch": 213
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260926
+      },
+      "sha256": "c993e0b3e19a16cf8e53eae7731fd6cf5bba0ca1595d77d2e6cfa824d0e7a6d7"
+    },
+    "results/fits/full2/seed20260926/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "81bc1de7bbb342318774ddefec7ccefe29ba08a2c6e672f2df0e0cf019ab342f",
+        "parent_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 0,
+          "next_batch": 213
+        },
+        "recovery_identity": {
+          "model": "full2",
+          "parameters": 33857,
+          "protocol_sha256": "81a0c9ad4017fc7e7e0e44e9e5907749e5d84ec504a83dd6a9601af07d9f9405",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "d2d186336624b75d93cb4afd48ecebd8919a6d1d2346d59e4755561ec0c60a35",
+        "source_receipt_sha256": "c993e0b3e19a16cf8e53eae7731fd6cf5bba0ca1595d77d2e6cfa824d0e7a6d7",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "08ce957bc83757c362209f7e8938a73f4cb9633b0e993360e2d50a1223629df1"
+      },
+      "sha256": "47bf4f72681f5cb43ef5acad7677413e867f7adfee736cdd393bdcaa3e6a83a1"
+    },
+    "results/fits/full2/seed20260926/runtime_sessions/session_x54_ak4h.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1836481,
+        "protocol_sha256": "81a0c9ad4017fc7e7e0e44e9e5907749e5d84ec504a83dd6a9601af07d9f9405",
+        "slurm_array_task_id": "2",
+        "slurm_job_id": "15148332",
+        "utc": "2026-10-24T12:47:38.039653+00:00"
+      },
+      "sha256": "be9138f8f90118167a55d12d9f19c257125db628198ac5c5dd768f3c40fdc019"
+    },
+    "results/fits/no_xy2/seed20260924/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "8e6e85cf2db721acd9411d5468034a911f6838af6205774fd6adc5d0179220ee"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "no_xy2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/no_xy2/seed20260924",
+        "original_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "a383cf9dd0b5d8858dd4b4ee5a2f7d0c72cc3851992be0eb8675325615e6c217",
+        "progress": {
+          "epoch": 0,
+          "next_batch": 369
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260924
+      },
+      "sha256": "8b72ec591de87ae09d14eac97e9e4c4601ca49813d45988e705b0e9a808de9bd"
+    },
+    "results/fits/no_xy2/seed20260924/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "cb9c0923188488499d91c4bb038cc9d10944a3d9a6b218b3d6d4a2e9172d7405",
+        "parent_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 0,
+          "next_batch": 369
+        },
+        "recovery_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "c4aeffe6f6ed9416e8d62f536cd3797627a662ba49fef5888459b4556cf50355",
+          "seed": 20260924,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "8e6e85cf2db721acd9411d5468034a911f6838af6205774fd6adc5d0179220ee",
+        "source_receipt_sha256": "8b72ec591de87ae09d14eac97e9e4c4601ca49813d45988e705b0e9a808de9bd",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "a383cf9dd0b5d8858dd4b4ee5a2f7d0c72cc3851992be0eb8675325615e6c217"
+      },
+      "sha256": "a028af2f29bf3f2ec289985764d3b0b2753e3a6938c05ad001d825f63196f7d3"
+    },
+    "results/fits/no_xy2/seed20260924/runtime_sessions/session__pxvhkhp.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1619493,
+        "protocol_sha256": "c4aeffe6f6ed9416e8d62f536cd3797627a662ba49fef5888459b4556cf50355",
+        "slurm_array_task_id": "6",
+        "slurm_job_id": "15148336",
+        "utc": "2026-10-24T17:11:49.348129+00:00"
+      },
+      "sha256": "fe3916352db0581085b0a47bc49778e27f6ee91dc7542f62eadd1149808422ed"
+    },
+    "results/fits/no_xy2/seed20260925/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "resume_checkpoint.pt": "d076515b46ff50cae83ffe2ee7e3850787e450d9ddb472796b1d59a03bdf4b1c"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "no_xy2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/no_xy2/seed20260925",
+        "original_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "a982c63a2e794acf41ded095130c211e475404af0a07744c8489168c7a42a79f",
+        "progress": {
+          "epoch": 0,
+          "next_batch": 340
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260925
+      },
+      "sha256": "c7693f05ebd3137970dddbadb55b23f4ed33f571e9593ca66c3429fee8d93c12"
+    },
+    "results/fits/no_xy2/seed20260925/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "9ed6ea52a60890ff45740c172ccebbacde0a5632ef33668d5605bcda45be5d14",
+        "parent_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "82f7e4176ddb9925e6a80429859da0832e828bd256cb020ab05f585b126e32cd",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 0,
+          "next_batch": 340
+        },
+        "recovery_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "c3e8abdbc5c7786256de29e1438a5cbd13608aff010c2ee44c3dc5bfc1bb42f5",
+          "seed": 20260925,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "d076515b46ff50cae83ffe2ee7e3850787e450d9ddb472796b1d59a03bdf4b1c",
+        "source_receipt_sha256": "c7693f05ebd3137970dddbadb55b23f4ed33f571e9593ca66c3429fee8d93c12",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "a982c63a2e794acf41ded095130c211e475404af0a07744c8489168c7a42a79f"
+      },
+      "sha256": "5ff227ec4e221c60e334c8060aa60e27c31389a21f1050027975073c4942905b"
+    },
+    "results/fits/no_xy2/seed20260925/runtime_sessions/session_aavsss08.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 1619794,
+        "protocol_sha256": "c3e8abdbc5c7786256de29e1438a5cbd13608aff010c2ee44c3dc5bfc1bb42f5",
+        "slurm_array_task_id": "7",
+        "slurm_job_id": "15148337",
+        "utc": "2026-10-24T17:24:31.785053+00:00"
+      },
+      "sha256": "ca71a56223b4603d0863a89daa4848943761072bbaf5e83e32c664e5050910fb"
+    },
+    "results/fits/no_xy2/seed20260926/lineage/source_receipt.json": {
+      "record": {
+        "files": {
+          "protocol.json": "16acb032c8e5295b58efce312f88d14b4d56d38137794f364678986f4710e6f0",
+          "resume_checkpoint.pt": "fa427ffe1c8e21c027ae9502a50efafa3a8edcefb3394efcb0495202e236ee35"
+        },
+        "mode": "migrated_optimizer_state",
+        "model": "no_xy2",
+        "note": "Original fit lock held through snapshot. Original files not overwritten.",
+        "original_fit": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df/results/fits/no_xy2/seed20260926",
+        "original_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "16acb032c8e5295b58efce312f88d14b4d56d38137794f364678986f4710e6f0",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+        "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+        "preserved_state_sha256": "65136b9679e2747e2277ca827e90a05a5f993d4d75d11c5927e262fd30e98edb",
+        "progress": {
+          "epoch": 1,
+          "next_batch": 293
+        },
+        "schema": "fims_gnn_recovery_source_v1",
+        "seed": 20260926
+      },
+      "sha256": "ff156f096bacab5e86f184632219c956a88edf60ba15407969e7519371b30d8d"
+    },
+    "results/fits/no_xy2/seed20260926/migration_receipt.json": {
+      "record": {
+        "changed_fields": [
+          "identity"
+        ],
+        "migrated_checkpoint_sha256": "b1726f629e72bad89299720bcab01230c8a28351de147e5f1e0022600999c8ae",
+        "parent_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "16acb032c8e5295b58efce312f88d14b4d56d38137794f364678986f4710e6f0",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "progress": {
+          "epoch": 1,
+          "next_batch": 293
+        },
+        "recovery_identity": {
+          "model": "no_xy2",
+          "parameters": 33857,
+          "protocol_sha256": "01f5b392c0a919ec7528e3e46682a43510703ae81f25aad8d310f199d2215c21",
+          "seed": 20260926,
+          "train_events": 7500
+        },
+        "schema": "fims_gnn_checkpoint_migration_v1",
+        "source_checkpoint_sha256": "fa427ffe1c8e21c027ae9502a50efafa3a8edcefb3394efcb0495202e236ee35",
+        "source_receipt_sha256": "ff156f096bacab5e86f184632219c956a88edf60ba15407969e7519371b30d8d",
+        "status": "VERIFIED",
+        "unchanged_payload_sha256": "65136b9679e2747e2277ca827e90a05a5f993d4d75d11c5927e262fd30e98edb"
+      },
+      "sha256": "27f972fc37c126282384467f15f7b4be13a11552cc6caf292a01a224a8c880ae"
+    },
+    "results/fits/no_xy2/seed20260926/runtime_sessions/session_h3y69il2.json": {
+      "record": {
+        "environment": {
+          "amp": false,
+          "backend": "cuda",
+          "cublas_workspace": ":4096:8",
+          "cuda_runtime": "12.6",
+          "cudnn": 90501,
+          "deterministic": true,
+          "gpu_capability": [
+            8,
+            0
+          ],
+          "gpu_name": "NVIDIA A30",
+          "numpy": "1.26.4",
+          "pyg": "2.7.0",
+          "python": "3.10.21",
+          "scipy": "1.15.2",
+          "tf32": false,
+          "threads": 2,
+          "torch": "2.7.0+cu126",
+          "visible_device_count": 1
+        },
+        "process_id": 2082110,
+        "protocol_sha256": "01f5b392c0a919ec7528e3e46682a43510703ae81f25aad8d310f199d2215c21",
+        "slurm_array_task_id": "8",
+        "slurm_job_id": "15148338",
+        "utc": "2026-10-26T00:21:34.429185+00:00"
+      },
+      "sha256": "66e50ce3dd49e3dbb0fbfdb57ca4e7021d23b478023976a921ddd624fc4be77f"
+    }
+  },
+  "original_package_sha256": "6b4fc507d9df8340fc7c728f1576f6565073f4670dfe6e65f1c763261734045a",
+  "original_study": "/mnt/lustre/koa/scratch/mhabbas/fims/parallel_v1/study_6b4fc507d9df",
+  "recovery_package_sha256": "3e6c80de0602e77c9dc4b8baa5e25663b047a4ba66eb276975d46f96aa349adf",
+  "reused_controls": {
+    "counts1/seed20260924": {
+      "complete.json": "7c3f48e06b05d0fef5d7f9be27b5e16e9d971e483bc36214c7a24c04c62ae2f5",
+      "metrics.json": "50649d80b71845b309d1cd6410ed4ee51dc51c9476f8ff58915ba6d3ee44878a",
+      "model_parameters.json": "dac1fc6135cf2116507124a054eb287de43857620f65217697f26ce06d744f0a",
+      "protocol.json": "71b33fbece137f4ef1e018e14a4ea3019e42792a3bceff00638987ec7eda10f5",
+      "selected_predictions.npz": "0d4d162549c09b4b138a7c435675d2139724bb3be90f0829c2809e886c4f0101"
+    },
+    "counts8/seed20260924": {
+      "complete.json": "0e7958ddc9951973c739a8057e6e510c51c48612fab196a419c01f32c85e1963",
+      "metrics.json": "9651743c9a44b5384b933921599eb0e19b71fb5cf5b96ddf922aa472754eb35a",
+      "model_parameters.json": "cf1fd1b87937fc6ad85633440593e736aa4e344c00c982fc8d21005abc8c06f3",
+      "protocol.json": "e9ba87e8f388b1810ee7994274b0787a6a113a8dd9f860e06a99a7f7ecfee21f",
+      "selected_predictions.npz": "cce7bf1249e590a0e52c40d17c01eab55f0958d4870716703a54d790288f01e6"
+    },
+    "shape1/seed20260924": {
+      "complete.json": "5d5e1cb06bc83e79be43716b4f491bee58c5ecc874b9ebdd184708ab653af3d4",
+      "metrics.json": "5ae0261021792b36f949f12f5be0db00a86572fd21da6730b658cc06d7734e8d",
+      "model_parameters.json": "666b9376e7f14fc3ebc6a6aff05066869bb2cc0061a6a1a626346502573f7cdc",
+      "protocol.json": "63836f64edd17614f7d01722e04c10776d66db24324b1f87e3ea59d181437533",
+      "selected_predictions.npz": "ba17740e5129eb41f000121f163b4321d3cee881e82e17c030d569be7749637e"
+    },
+    "shape8/seed20260924": {
+      "complete.json": "68ebc1fab1ba1b9eff21105b9c3756d3c7ed691e8e6a01ccf38a9a8b280b6e8d",
+      "metrics.json": "aed041dd36ef787b32f020cd85b517a7db07bffb4f0730cb1807c0bdde5a45e1",
+      "model_parameters.json": "dce5e4a6837a861fcde5c891afa0a662de443b3c5a12a55f2b136c6bfb564e36",
+      "protocol.json": "9f4e50d68490b6a48c24ba13612bf33fafebee959320bb02fb6683d75528a119",
+      "selected_predictions.npz": "9dd9b3f33521f453fdda0b3e14af660c5e432ad506da0d41e50268a8dc62b460"
+    }
+  },
+  "runtime_note": "Runtime recovery: original data, graph neighborhoods, parameters, optimizer batches, loss, seeds and checkpoint selection are preserved. Unfinished fits resume from verified original checkpoints with chunked message evaluation and activation recomputation. Floating-point summation can differ at roundoff; bitwise identity to the old CUDA path is not claimed. Completed controls/results are reused unchanged. This is development validation, not independent confirmation. See runtime lineage for each fit.",
+  "schema": "fims_gnn_recovery_report_lineage_v1"
+}
