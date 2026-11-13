@@ -1,0 +1,55 @@
+FIMS RADIUS PACKAGE VALIDATION — 12 November 2026
+
+Local isolated CPU environment:
+Python 3.12; PyTorch 2.7.0+cpu; NumPy 1.26.4; SciPy 1.15.2;
+PyTorch Geometric 2.7.0; Matplotlib 3.10.9.
+Koa reuses the historically pinned scientific environment and verifies it before
+submission and task execution. The local Python/CUDA environment is not claimed
+to be identical to Koa.
+
+PASS: radius training self-test (all radii, independent membership boundaries,
+causality/endcap/truth exclusion, permutation, full-graph/query-only logits,
+gradients and Adam updates, dense edge chunk boundary, fixed-denominator batches,
+ignored targets, empty events, exact optimizer/RNG resume and identity rejection).
+
+PASS: radius controls self-test (exact historical 2 mm features; independent
+scalar 1/2/4 mm references; training-only scaling; original deterministic fitting;
+six complete fits; verified cache/fit reuse and tamper rejection).
+
+PASS: 14 standard-library common identity/inventory tests.
+PASS: 13 report tests, including score ties, ignored-site primary charge,
+strict >5% event-loss denominator, selected/final separation, incomplete seeds,
+output hashes and report publication.
+PASS: 18 scheduler tests, including active-job reuse, dependencies, missing-only
+resume and signal forwarding. The immediate-child-exit race was fixed and the
+signal test repeated successfully 60 times.
+PASS: 15 offline local-transfer tests: SSH reuse with stubs, safe installer,
+source and archive corruption rejection, complete/partial report retrieval.
+
+PASS: actual cross-module synthetic integration. Nine tiny GNN fits and six
+controls were trained; the report read their real saved schemas and all 24
+selected/final endpoints, verified protocols and profile receipts, and produced
+a hash-verified ZIP. Verified completed fits were reused on a second call.
+The integration uses invented events; it is not a physics result.
+
+PASS: shell syntax; immutable vendor source inventory; standalone embedded
+package installation and local verification. The installed package uses the
+same scripts as the tested source package.
+
+Independent review found no blocking scientific/code issue in the graph,
+training, controls and identity modules. The context radius and edge radius are
+co-varied; this is not an isolated neighbor-to-neighbor connectivity study.
+
+NOT PERFORMED HERE: real event training, remote Koa login/submission, CUDA
+execution, real-data report generation. Each allocated GPU runs numerical
+equivalence checks before opening the frozen development data for training.
+No speedup or completion-time guarantee is made from synthetic CPU tests.
+
+Reproduce local checks from the installed package using an appropriate Python:
+python code/train_radius.py --self-test --device cpu
+python code/control_radius.py --self-test
+python code/report_radius.py --self-test
+python code/test_radius_common.py
+python code/test_radius_integration.py
+python hpc/test_launchers.py
+python local/test_local.py

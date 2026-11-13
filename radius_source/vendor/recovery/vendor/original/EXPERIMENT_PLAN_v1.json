@@ -1,0 +1,44 @@
+{
+  "background_overlay": "future separate experiment",
+  "checkpoint_selection": "earliest minimum development validation class-balanced BCE",
+  "continuous_branch_stage": "exact original ROOT readout replay and arrival schema review; hit-model training follows verification",
+  "controls": [
+    "counts8",
+    "shape8",
+    "counts1",
+    "shape1"
+  ],
+  "data_events": 10000,
+  "epochs": 10,
+  "event_damage_endpoint": "fraction of primary-bearing events losing >5% primary charge",
+  "gnn_variants": [
+    "full2",
+    "full1",
+    "no_xy2",
+    "current2"
+  ],
+  "hidden_channels": 64,
+  "prior_25ns_collision_mask_preserved": true,
+  "recall_cost_targets": [
+    0.8,
+    0.9
+  ],
+  "report_native_and_charge_recall_separately": true,
+  "retention_targets": [
+    0.9995,
+    0.999,
+    0.995,
+    0.99
+  ],
+  "schema": "fims_parallel_development_plan_v1",
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "status": "prepared_not_submitted",
+  "test_data_access": false,
+  "threshold_scope": "descriptive development validation; no independent confirmation",
+  "training_events": 7500,
+  "validation_events": 2500
+}
