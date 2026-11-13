@@ -1,0 +1,25 @@
+{
+  "operating_point_source": {
+    "byte_preserved": true,
+    "package_manifest_sha256": "80c3e144918f9dc2ea3e19bc13840819dc0c1250ca303dad6615261d8ad874bd",
+    "verified_members": 35
+  },
+  "radius_source": {
+    "byte_preserved": true,
+    "package_manifest_sha256": "2351652fb4860adf437183523b50cdf656cfe06a5ccfb95422cc0ce4e224fa86",
+    "verified_members": 67
+  },
+  "reported_results": {
+    "distinct_model_seed_fits": 22,
+    "note": "The supplied upstream completion marker is preserved; its entire output inventory is not bundled.",
+    "operating_point_rows": 110,
+    "upstream_completion_status": "COMPLETE",
+    "upstream_package_sha256": "80c3e144918f9dc2ea3e19bc13840819dc0c1250ca303dad6615261d8ad874bd",
+    "verified_against_upstream_output_hashes": [
+      "fims_operating_points_v1.csv",
+      "fims_operating_point_metrics_v1.json",
+      "fims_operating_point_provenance_v1.json",
+      "fims_operating_point_summary_v1.txt"
+    ]
+  }
+}
