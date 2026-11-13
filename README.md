@@ -1,8 +1,6 @@
 # CS224W FIMS milestone: source and result companion
 
 This is a source snapshot and evidence companion to the milestone report.
-It is not a finished Colab, a standalone portable training tutorial, or a
-complete data/model release. Opening this ZIP does not launch any cluster jobs.
 
 ## Contents
 
